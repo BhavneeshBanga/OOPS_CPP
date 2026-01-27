@@ -1,0 +1,3 @@
+Hello world this if first line which i dump into the textfile.txt
+thsi si second line
+this one is third

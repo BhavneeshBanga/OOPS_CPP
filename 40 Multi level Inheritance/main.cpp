@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+class Student{
+    protected:
+        int roll_number;
+    public:
+        void set_roll_number(int);
+        void get_roll_number(void);
+};
+
+void Student :: set_roll_number(int r){
+    roll_number = r;
+}
+
+void Student :: get_roll_number(void){
+    cout<<"The roll number is "<<roll_number<<endl;
+}
+
+class Exam : public Student{
+    protected:
+        float maths;
+        float physics;
+    public:
+        void set_marks(float, float);
+        void get_marks(void);
+};
+
+void Exam :: set_marks(float m1, float m2){
+    maths = m1;
+    physics = m2;
+}
+
+void Exam :: get_marks(){
+    cout<<"The marks obtained in physics are : "<<physics<<endl;
+    cout<<"The marks obtained in maths are : "<<maths<<endl;
+}
+
+class Result : public Exam{
+    float percentage;
+    public:
+        void display(){
+            get_roll_number();
+            get_marks();
+            cout<<"Your percentage is "<<(maths+physics)/2<<endl;
+        }
+};
+
+int main() {
+    /*
+    NOTES:
+        if we are in inheriting B from A and C from B -->[A--->B--->C]
+        1. A is the base claass for B and B ais the baase class for C
+        2. A B C is called inheritance path
+
+    */
+
+    Result harry;
+    harry.set_roll_number(420);
+    harry.set_marks(99.9, 100.00);
+    harry.display();
+    
+    return 0;
+}
+

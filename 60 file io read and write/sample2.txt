@@ -1,0 +1,3 @@
+this is coming from a file sample2.txt
+kya yeh second line bhi print hogi
+chalo dekhte hain!!
