@@ -13,8 +13,8 @@ class boy{
         void getdata(void){
             cout<<"the name of the student is "<<name<< " and his age is "<<age<<endl;
         }
-
 };
+
 int main() {
     boy boys[5];
     for(int i = 0 ; i<5 ; i++){

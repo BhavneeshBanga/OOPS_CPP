@@ -9,7 +9,7 @@ class Employee{
             id = inpid;
             salary = 34.10;
         }
-        Employee(){}
+        Employee(){ }
 };
 // derieved class
 // class {{derived_class_name }}: {{viisbility_mode}} {{base_class_name}}

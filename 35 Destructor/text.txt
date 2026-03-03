@@ -1,0 +1,4 @@
+lekin destructorr scope end hone par kall hota hai,  creation ke just baad nahi.
+
+
+
