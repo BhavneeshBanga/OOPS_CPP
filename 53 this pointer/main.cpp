@@ -1,3 +1,4 @@
+// Har non-static member function ke andar automatically available hota hai.
 #include <iostream>
 using namespace std;
 class A{

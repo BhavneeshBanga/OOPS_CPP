@@ -20,3 +20,8 @@ int main() {
     
     return 0;
 }
+
+
+// this pointer sirf tab exist karta hai jab:
+
+//👉 Non-static member function call hota hai.

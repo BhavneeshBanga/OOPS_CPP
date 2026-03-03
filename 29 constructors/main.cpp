@@ -19,6 +19,7 @@ complex :: complex(void){       //this is a default constructor as it takes no p
     b = 0;
     cout<<"hello world\n";
 }
+
 int main() {
     complex c1, c2, c3;
     c1.printnumber();
@@ -36,4 +37,6 @@ int main() {
     3. they cannot return values and cannot have return types 
     4. ti can have default arguments.
     5. we cannnot refer to their address 
+    * Memory allocation happens whem constructor is called
+    
 */

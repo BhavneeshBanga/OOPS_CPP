@@ -13,8 +13,9 @@ class Complex{
             a = num;
             cout<<"simple constructor called!!"<<endl;
         }
-        Complex(Complex & obj){
-            a = obj.a;
+        Complex(Complex & obj){     //pass by reference
+            // this->a = obj.a;        //shalllow copy ban rahi hai
+            // a = obj.a;   
             cout<<"Copy constructor called!!"<<endl;
         }
         void display(void){
@@ -22,11 +23,11 @@ class Complex{
         }
 };
 int main() {
-    Complex c1;
-    c1.display();
+    // Complex c1;
+    // c1.display();
 
-    Complex c2;
-    c2.display();
+    // Complex c2;
+    // c2.display();
 
     Complex c3(8);
     c3.display();

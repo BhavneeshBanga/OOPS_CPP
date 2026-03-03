@@ -21,7 +21,7 @@ class book{
             cout<<"The price of the book is "<<price<<endl;
             cout<<"The number of pages  of the book is "<<nop<<endl;
         }
-    };
+};
 
 book :: book(void){
     name = "HarryPorter";
